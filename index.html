@@ -28,15 +28,46 @@
   header hr {
     border: 0;
     border-top: 2px solid #000;
+    margin: 0 0 36px;
+  }
+  .board-intro {
+    font-size: 15px;
+    text-align: center;
     margin: 0 0 44px;
   }
-  main p {
+  .notice-item {
+    margin: 0 0 64px;
+  }
+  .notice-meta {
+    font-size: 14px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 6px;
+    margin: 0 0 30px;
+  }
+  .notice-meta a { color: #000; }
+  article.notice h2 {
+    margin: 0 0 32px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
+  .notice-body {
+    font-size: 16px;
+    margin: 0 0 40px;
+  }
+  .notice-date {
     font-size: 16px;
     text-align: center;
-    margin: 10px 0;
+    margin: 0 0 40px;
   }
+  .notice-signature {
+    text-align: right;
+    font-size: 16px;
+  }
+  .notice-signature p { margin: 4px 0; }
   footer {
-    margin-top: 96px;
+    margin-top: 80px;
     border-top: 1px solid #000;
     padding-top: 14px;
     font-size: 13px;
@@ -56,8 +87,21 @@
       <hr>
     </header>
     <main>
-      <p>주식회사 미트갈라하우스 전자공고 게시판입니다.</p>
-      <p>현재 게시된 공고가 없습니다.</p>
+      <p class="board-intro">주식회사 미트갈라하우스 전자공고 게시판입니다.</p>
+
+      <section class="notice-item" id="notice-1">
+        <p class="notice-meta">제1차 공고 · 게시일 2026년 8월 8일 · <a href="/notice-1.pdf">PDF 내려받기</a></p>
+        <article class="notice">
+          <h2>청산공고 (해산 및 채권신고 공고)</h2>
+          <p class="notice-body">주식회사 미트갈라하우스는 2026년 8월 8일 주주총회의 결의에 의하여 해산하였으므로, 본 회사에 채권이 있는 분께서는 이 공고 게재일로부터 2개월 이내에 그 채권액을 신고하여 주시기 바랍니다. 위 기간 내에 신고하지 아니하면 청산에서 제외됩니다.</p>
+          <p class="notice-date">2026년 8월 8일</p>
+          <div class="notice-signature">
+            <p>경기도 화성시 동탄구 동탄순환대로20길 115, 2238동 603호(목동, 르파비스)</p>
+            <p>주식회사 미트갈라하우스</p>
+            <p>청산인 강수인</p>
+          </div>
+        </article>
+      </section>
     </main>
     <footer>
       <p>본 페이지는 상법 제289조 제3항에 따른 주식회사 미트갈라하우스의 전자공고 게시판입니다.</p>
